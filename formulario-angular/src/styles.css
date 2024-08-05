@@ -207,3 +207,47 @@ body {
         margin-top: 0.5rem;
     }
 }
+
+.modal {
+  display: none; /* Ocultar por padrão */
+  position: fixed; /* Ficar fixo na tela */
+  z-index: 1000; /* Ficar acima de outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permitir scroll se necessário */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  display: flex; /* Adicionando flexbox */
+  justify-content: center; /* Centralizar horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Largura do modal */
+  max-width: 500px; /* Máxima largura */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  position: relative; /* Para o botão fechar */
+}
+
+.close {
+  color: #aaa;
+  position: absolute; /* Para posicionar no canto superior direito */
+  right: 15px; /* Distância da borda direita */
+  top: 15px; /* Distância da borda superior */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
